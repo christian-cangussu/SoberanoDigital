@@ -1,0 +1,124 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #FFD700;
+}
+
+a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+}
+
+#navbar a {
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+  color: #fff;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: #000;
+  color: #FFD700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  padding: 15px 0;
+}
+
+#welcome-section p {
+  font-size: 1.3em;
+  color: #f5d76e;
+  padding: 10px 0;
+}
+
+#projects {
+  padding: 60px 20px;
+  background-color: #111;
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #FFD700;
+}
+
+.project-tile {
+  background-color: #000;
+  border: 2px solid #FFD700;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.5);
+}
+
+.project-tile a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.2em;
+}
+
+.project-tile a::before {
+  content: "🔍";
+  font-size: 1.4em;
+}
+
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000;
+  color: #FFD700;
+}
+
+#contact h2 {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  .project-tile {
+    margin: 20px;
+  }
+}
